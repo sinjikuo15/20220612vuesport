@@ -262,16 +262,18 @@ export default {
     }
 
     .price-btn {
+        color: gray;
+        text-decoration: none;
         font-size: 12px;
-
         background-color: #FDD935;
         border-radius: 5px;
         border: 0px;
-        padding: 5px 25px;
-        margin-top: 10px;
+        padding: 5px 20px;
+        /* margin-bottom: 10px; */
     }
 
     .price-btn:hover {
+        color: black;
         background-color: #d8bc42;
         transition: 0.5s;
     }
