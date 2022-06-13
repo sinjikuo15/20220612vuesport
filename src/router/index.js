@@ -6,7 +6,7 @@ import SignUpView from '../views/SignUpView.vue'
 import cartView from '../views/cartView.vue'
 import Product from '../views/ProductView.vue'
 import categoryView from '../views/categoryView.vue'
-
+import memberView from '../views/memberView.vue'
 
 
 const routes = [
@@ -43,7 +43,10 @@ const routes = [
     path: '/category',
     component: categoryView
   },
-  
+  {
+    path: '/member',
+    component:memberView
+  },
 ]
 
 const router = createRouter({
