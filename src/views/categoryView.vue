@@ -1,11 +1,11 @@
 <template>
     <!-- 商品區 -->
     <div class="container-fluid">
-        <div class="row justify-content-start">
+        <div class="row justify-content-center">
             <sideBar></sideBar>
             <!-- 商品區 -->
-            <div class="col-12  col-md-9">
-                <div class="row type-content">
+            <div class="col-12  col-md-9 py-5">
+                <div class="row type-content justify-content-around">
 
                     <div v-for="categoryItem in categoryList" class="col-6 col-sm-4 col-md-3 saler row">
                         <figure style="max-width:200px">
@@ -23,6 +23,25 @@
     </div>
 
 </template>
+
+<style>
+.price-btn {
+    color: gray;
+    text-decoration: none;
+    font-size: 12px;
+    background-color: #FDD935;
+    border-radius: 5px;
+    border: 0px;
+    padding: 5px 20px;
+    /* margin-bottom: 10px; */
+}
+
+.price-btn:hover {
+    color: black;
+    background-color: #d8bc42;
+    transition: 0.5s;
+}
+</style>
 
 <script>
 import sideBar from '../components/sideBar.vue'

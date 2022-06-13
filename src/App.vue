@@ -55,9 +55,21 @@
                                     男士
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                    <li><a class="dropdown-item" href="#">上衣</a></li>
-                                    <li><a class="dropdown-item" href="#">外套</a></li>
-                                    <li><a class="dropdown-item" href="#">鞋類</a></li>
+                                    <li>
+                                        <router-link
+                                            :to="{ path: '/category', query: { gender: 'male', category: 'top' } }"
+                                            class="dropdown-item" href="#">上衣</router-link>
+                                    </li>
+                                    <li>
+                                        <router-link
+                                            :to="{ path: '/category', query: { gender: 'male', category: 'bottom' } }"
+                                            class="dropdown-item" href="#">褲子</router-link>
+                                    </li>
+                                    <li>
+                                        <router-link
+                                            :to="{ path: '/category', query: { gender: 'male', category: 'shoes' } }"
+                                            class="dropdown-item" href="#">鞋類</router-link>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -66,9 +78,21 @@
                                     女士
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                    <li><a class="dropdown-item" href="#">上衣</a></li>
-                                    <li><a class="dropdown-item" href="#">外套</a></li>
-                                    <li><a class="dropdown-item" href="#">鞋類</a></li>
+                                    <li>
+                                        <router-link
+                                            :to="{ path: '/category', query: { gender: 'female', category: 'top' } }"
+                                            class="dropdown-item" href="#">上衣</router-link>
+                                    </li>
+                                    <li>
+                                        <router-link
+                                            :to="{ path: '/category', query: { gender: 'female', category: 'bottom' } }"
+                                            class="dropdown-item" href="#">褲子</router-link>
+                                    </li>
+                                    <li>
+                                        <router-link
+                                            :to="{ path: '/category', query: { gender: 'female', category: 'shoes' } }"
+                                            class="dropdown-item" href="#">鞋類</router-link>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -77,8 +101,16 @@
                                     兒童/青少年
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                    <li><a class="dropdown-item" href="#">上衣</a></li>
-                                    <li><a class="dropdown-item" href="#">鞋類</a></li>
+                                    <li>
+                                        <router-link
+                                            :to="{ path: '/category', query: { gender: 'kid', category: 'top' } }"
+                                            class="dropdown-item" href="#">上衣</router-link>
+                                    </li>
+                                    <li>
+                                        <router-link
+                                            :to="{ path: '/category', query: { gender: 'kid', category: 'shoes' } }"
+                                            class="dropdown-item" href="#">鞋類</router-link>
+                                    </li>
                                 </ul>
                             </li>
 
@@ -124,46 +156,65 @@
                 <li class="col-2"><a href="/products">全部</a>
 
                 </li>
-                <li class="col-2"><router-link :to="{path: '/category',query:{gender: 'male',category: 'all'}}">
-                            男士
-                        </router-link>
+                <li class="col-2">
+                    <router-link :to="{ path: '/category', query: { gender: 'male', category: 'all' } }">
+                        男士
+                    </router-link>
                     <ul>
-                        <li><router-link :to="{path: '/category',query:{gender: 'male', category: 'top'}}">
-                            上衣
-                        </router-link></li>
-                        <li><router-link :to="{path: '/category',query:{gender: 'male', category: 'bottom'}}">
-                            下著
-                        </router-link></li>
-                        <li><router-link :to="{path: '/category',query:{gender: 'male', category: 'shoes'}}">
-                            鞋類
-                        </router-link></li>
+                        <li>
+                            <router-link :to="{ path: '/category', query: { gender: 'male', category: 'top' } }">
+                                上衣
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{ path: '/category', query: { gender: 'male', category: 'bottom' } }">
+                                下著
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{ path: '/category', query: { gender: 'male', category: 'shoes' } }">
+                                鞋類
+                            </router-link>
+                        </li>
                     </ul>
                 </li>
-                <li class="col-2"><router-link :to="{path: '/category',query:{gender: 'female',category: 'all'}}">
-                            女士
-                        </router-link>
+                <li class="col-2">
+                    <router-link :to="{ path: '/category', query: { gender: 'female', category: 'all' } }">
+                        女士
+                    </router-link>
                     <ul>
-                        <li><router-link :to="{path: '/category',query:{gender: 'female', category: 'top'}}">
-                            上衣
-                        </router-link></li>
-                        <li><router-link :to="{path: '/category',query:{gender: 'female', category: 'bottom'}}">
-                            下著
-                        </router-link></li>
-                        <li><router-link :to="{path: '/category',query:{gender: 'female', category: 'shoes'}}">
-                            鞋類
-                        </router-link></li>
+                        <li>
+                            <router-link :to="{ path: '/category', query: { gender: 'female', category: 'top' } }">
+                                上衣
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{ path: '/category', query: { gender: 'female', category: 'bottom' } }">
+                                下著
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{ path: '/category', query: { gender: 'female', category: 'shoes' } }">
+                                鞋類
+                            </router-link>
+                        </li>
                     </ul>
                 </li>
-                <li class="col-2"><router-link :to="{path: '/category',query:{gender: 'kid',category: 'all'}}">
-                            兒童/青少年
-                        </router-link>
+                <li class="col-2">
+                    <router-link :to="{ path: '/category', query: { gender: 'kid', category: 'all' } }">
+                        兒童/青少年
+                    </router-link>
                     <ul>
-                        <li><router-link :to="{path: '/category',query:{gender: 'kid', category: 'top'}}">
-                            上衣
-                        </router-link></li>
-                        <li><router-link :to="{path: '/category',query:{gender: 'kid', category: 'shoes'}}">
-                            鞋類
-                        </router-link></li>
+                        <li>
+                            <router-link :to="{ path: '/category', query: { gender: 'kid', category: 'top' } }">
+                                上衣
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{ path: '/category', query: { gender: 'kid', category: 'shoes' } }">
+                                鞋類
+                            </router-link>
+                        </li>
                     </ul>
                 </li>
 
