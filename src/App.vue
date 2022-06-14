@@ -449,7 +449,7 @@ nav ul ul li a {
 
 nav ul ul li a:hover {
     background: rgb(244, 241, 241);
-    color: rgb(49, 227, 168);
+    color: rgb(150, 177, 219);
 }
 
 .member-btn {

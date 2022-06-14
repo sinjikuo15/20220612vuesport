@@ -6,7 +6,7 @@
                 ↬男士
             </router-link>
         </h5>
-        <ul>
+        <ul >
             <li>
                 <router-link :to="{ path: '/category', query: { gender: 'male', category: 'top' } }">
                     上衣
@@ -23,14 +23,14 @@
                 </router-link>
             </li>
         </ul>
-        <hr>
+        
         <h5>
             <router-link class="Classification"
                 :to="{ path: '/category', query: { gender: 'female', category: 'all' } }">
                 ↬女士
             </router-link>
         </h5>
-        <ul>
+        <ul >
             <li>
                 <router-link :to="{ path: '/category', query: { gender: 'female', category: 'top' } }">
                     上衣
@@ -47,23 +47,22 @@
                 </router-link>
             </li>
         </ul>
-        <hr>
-        <h5>
+                <h5>
             <router-link class="Classification" :to="{ path: '/category', query: { gender: 'kid', category: 'all' } }">
                 ↬兒童/青少年
             </router-link>
         </h5>
-        <ul>
+        <ul >
             <li>
                 <router-link :to="{ path: '/category', query: { gender: 'kid', category: 'top' } }">
                     上衣
                 </router-link>
             </li>
-            <li>
+            <li >
                 <router-link :to="{ path: '/category', query: { gender: 'kid', category: 'shoes' } }">
                     鞋類
                 </router-link>
-            </li>
+            </li >
         </ul>
     </div>
 
@@ -86,16 +85,24 @@
 
 .type-bar ul {
     list-style: none;
+    border-bottom: 1px solid rgb(182, 177, 177);
+    padding-bottom: 15px;
+
 }
 
 .type-bar ul a {
     text-decoration: none;
     color: gray;
+    
 }
 
 .type-bar ul a:hover {
     text-decoration: none;
     color: rgb(150, 177, 219);
+}
+.type-bar li  {
+    position: relative; 
+    left: -25px;
 }
 
 .Classification {
